@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgriInnovation Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #232B34;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    header {
+      background-color: #28a745;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 70vh;
+      background: url('images/plant.png') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .overlay-content {
+      z-index: 2;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .hero-section .btn {
+      margin-top: 1rem;
+      background-color: #28a745;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 3;
+    }
+
+    .hero-section .btn:hover {
+      background-color: #FB9C00;
+      border-color: #FB9C00;
+      color: #232B34;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1c232b;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AgriInnovation Lab</h1>
+  </header>
+
+  <section class="hero-section">
+    <div class="overlay-content">
+      <h2>Connecting Accountants to Agribusiness</h2>
+      <button onclick="window.location.href='home.html'" class="btn">Explore Lab</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 YAP Africa AgriInnovation Lab</p>
+  </footer>
+</body>
+</html>

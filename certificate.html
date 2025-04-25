@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificate of Completion</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <style>
+<style>
+  body {
+    background-color: #232B34;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .certificate-container {
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW785fSYeKKPH0b1Cm8rmmDfIs8z1mKHKWBku9EhExGzXTCEdqhGBcY9naGFas51cUAMX66BdX-E0QzLiLTxG_WhCOD-3mc-KdAlLBd0YbwaRuhBskmbGp5dPt5A9ezCOOspzRKI4HVciyBFTU1vYNmDRaU_SIpgbpiz-t13NAonsvHqHGwaMNNE82PBgD/s1056/Certificate%20with%20logo%20Resized.jpg'); /* Your certificate template */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+    height: 600px;
+    color: #232B34;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .certificate-container h1,
+  .certificate-container h2,
+  .certificate-container p,
+  .certificate-container .date {
+    margin: 0;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+  }
+
+  .certificate-container h1 {
+    color: #28a745;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .certificate-container h2 {
+    font-size: 20px;
+  }
+
+  .certificate-container p {
+    font-size: 16px;
+  }
+
+  .certificate-container .date {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .certificate-container button {
+    margin-top: 25px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .certificate-container button:hover {
+    background-color: #FB9C00;
+  }
+</style>
+</head>
+<body>
+
+  <div class="certificate-container" id="certificateContent">
+    <h1>🎉 Certificate of Completion</h1>
+    <h2>Presented to</h2>
+    <h2 id="certName">[Name]</h2>
+    <p>for successfully completing all modules in the</p>
+    <h2>Agribusiness Innovation Lab</h2>
+    <div class="date" id="certDate"></div>
+    <button onclick="downloadCertificate()">Download Certificate</button>
+  </div>
+
+  <script>
+    // Load user and progress
+    const user = JSON.parse(localStorage.getItem('user'));
+    const progress = JSON.parse(localStorage.getItem('progress')) || {};
+
+    const totalModules = 3;
+    const completedModules = Object.keys(progress).length;
+
+    const nameField = document.getElementById('certName');
+    const dateField = document.getElementById('certDate');
+
+    if (!user || completedModules < totalModules) {
+      alert("You must complete all modules to access the certificate.");
+      window.location.href = 'dashboard.html';
+    } else {
+      nameField.textContent = user.name;
+      const today = new Date().toLocaleDateString();
+      dateField.textContent = `Date: ${today}`;
+    }
+
+function downloadCertificate() {
+  const element = document.getElementById('certificateContent');
+  const button = element.querySelector('button');
+
+  // Hide the button
+  button.style.display = 'none';
+
+  const opt = {
+    margin:       0,
+    filename:     'Agribusiness_Certificate.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 2 },
+    jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
+  };
+
+  html2pdf().set(opt).from(element).save().then(() => {
+    // Show the button again after saving
+    button.style.display = 'inline-block';
+  });
+}
+
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+</html>

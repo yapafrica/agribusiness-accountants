@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Agribusiness Innovation Lab</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+
+</head>
+<body>
+  <header class="main-header">
+    <h1>Welcome to Your Dashboard</h1>
+    <button onclick="logout()" class="btn">Logout</button>
+  </header>
+
+<div class="progress-wrapper">
+  <p id="progressStatus">Loading progress...</p>
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+</div>
+
+  <section class="features">
+    <h2>Modules</h2>
+
+<div class="feature" id="module1">
+  <h3>Module 1: Introduction to Agribusiness Consulting</h3>
+  <iframe width="100%" height="200" src="https://www.youtube.com/embed/5yzi0fwhcAE" frameborder="0" allowfullscreen></iframe>
+  <p>Learn the fundamentals of agribusiness and its consulting opportunities.</p>
+
+  <div class="module-actions">
+    <a href="lesson1.html" class="btn lesson-btn">Take Lesson</a>
+    <button class="btn complete-btn" onclick="completeModule('module1')">Mark as Complete</button>
+  </div>
+</div>
+
+<div class="feature" id="module2">
+  <h3>Module 2: Agribusiness Operations & Management</h3>
+  <iframe width="100%" height="200" src="https://www.youtube.com/embed/L4p7P8zPVD4" frameborder="0" allowfullscreen></iframe>
+  <p>Explore different agribusiness models and services you can offer.</p>
+
+  <div class="module-actions">
+    <a href="lesson6.html" class="btn lesson-btn">Take Lesson</a>
+    <button class="btn complete-btn" onclick="completeModule('module2')">Mark as Complete</button>
+  </div>
+</div>
+
+<div class="feature" id="module3">
+  <h3>Module 3: Nigerian Agribusiness Sectors Insights</h3>
+  <iframe width="100%" height="200" src="https://www.youtube.com/embed/L4p7P8zPVD4" frameborder="0" allowfullscreen></iframe>
+  <p>Explore different agribusiness models and services you can offer.</p>
+
+  <div class="module-actions">
+    <a href="lesson11.html" class="btn lesson-btn">Take Lesson</a>
+    <button class="btn complete-btn" onclick="completeModule('module3')">Mark as Complete</button>
+  </div>
+</div>
+
+<div class="feature" id="module4">
+  <h3>Module 4: Finance, Funding & Investment</h3>
+  <iframe width="100%" height="200" src="https://www.youtube.com/embed/L4p7P8zPVD4" frameborder="0" allowfullscreen></iframe>
+  <p>Explore different agribusiness models and services you can offer.</p>
+
+  <div class="module-actions">
+    <a href="lesson16.html" class="btn lesson-btn">Take Lesson</a>
+    <button class="btn complete-btn" onclick="completeModule('module4')">Mark as Complete</button>
+  </div>
+</div>
+
+<div class="feature" id="module5">
+  <h3>Module 5: Taxation in Agribusiness</h3>
+  <iframe width="100%" height="200" src="https://www.youtube.com/embed/L4p7P8zPVD4" frameborder="0" allowfullscreen></iframe>
+  <p>Explore different agribusiness models and services you can offer.</p>
+
+  <div class="module-actions">
+    <a href="lesson21.html" class="btn lesson-btn">Take Lesson</a>
+    <button class="btn complete-btn" onclick="completeModule('module5')">Mark as Complete</button>
+  </div>
+</div>
+
+<div class="feature" id="module6">
+  <h3>Module 6: Compliance & Regulatory Landscape</h3>
+  <iframe width="100%" height="200" src="https://www.youtube.com/embed/L4p7P8zPVD4" frameborder="0" allowfullscreen></iframe>
+  <p>Explore different agribusiness models and services you can offer.</p>
+
+  <div class="module-actions">
+    <a href="lesson26.html" class="btn lesson-btn">Take Lesson</a>
+    <button class="btn complete-btn" onclick="completeModule('module6')">Mark as Complete</button>
+  </div>
+</div>
+
+<div class="feature" id="module7">
+  <h3>Module 7: Accounting Standards & Reporting</h3>
+  <iframe width="100%" height="200" src="https://www.youtube.com/embed/L4p7P8zPVD4" frameborder="0" allowfullscreen></iframe>
+  <p>Explore different agribusiness models and services you can offer.</p>
+
+  <div class="module-actions">
+    <a href="lesson31.html" class="btn lesson-btn">Take Lesson</a>
+    <button class="btn complete-btn" onclick="completeModule('module7')">Mark as Complete</button>
+  </div>
+</div>
+
+<div class="feature" id="module8">
+  <h3>Module 8: Grant Writing & Opportunities for Accountants</h3>
+  <iframe width="100%" height="200" src="https://www.youtube.com/embed/L4p7P8zPVD4" frameborder="0" allowfullscreen></iframe>
+  <p>Explore different agribusiness models and services you can offer.</p>
+
+  <div class="module-actions">
+    <a href="lesson36.html" class="btn lesson-btn">Take Lesson</a>
+    <button class="btn complete-btn" onclick="completeModule('module8')">Mark as Complete</button>
+  </div>
+</div>
+
+<div class="feature" id="module9">
+  <h3>Module 9: Agribusiness Consulting Practice</h3>
+  <iframe width="100%" height="200" src="https://www.youtube.com/embed/L4p7P8zPVD4" frameborder="0" allowfullscreen></iframe>
+  <p>Explore different agribusiness models and services you can offer.</p>
+
+  <div class="module-actions">
+    <a href="lesson41.html" class="btn lesson-btn">Take Lesson</a>
+    <button class="btn complete-btn" onclick="completeModule('module9')">Mark as Complete</button>
+  </div>
+</div>
+
+<div class="feature" id="module10">
+  <h3>Module 10: Case Studies in Agribusiness</h3>
+  <iframe width="100%" height="200" src="https://www.youtube.com/embed/L4p7P8zPVD4" frameborder="0" allowfullscreen></iframe>
+  <p>Explore different agribusiness models and services you can offer.</p>
+
+  <div class="module-actions">
+    <a href="lesson46.html" class="btn lesson-btn">Take Lesson</a>
+    <button class="btn complete-btn" onclick="completeModule('module10')">Mark as Complete</button>
+  </div>
+</div>
+
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

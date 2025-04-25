@@ -1,0 +1,182 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #232B34;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #FB9C00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.main-header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #28a745;
+  color: white;
+}
+
+.main-header h1 {
+  margin-bottom: 10px;
+}
+
+header .btn {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+header .btn:hover {
+  background-color: #FB9C00;
+  color: #232B34;
+  border-color: #FB9C00;
+}
+
+.btn {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #FB9C00;
+  color: #fff;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.feature {
+  background: #2f3b46;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Form Styles */
+.form-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #2f3b46;
+  padding: 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+form input {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  color: #999;
+  cursor: pointer;
+}
+
+.module-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.module-actions .btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.module-actions .btn:hover {
+  background-color: #FB9C00;
+}
+
+.progress-wrapper {
+  margin: 20px 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #444;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #28a745;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+.lesson-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.lesson-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
